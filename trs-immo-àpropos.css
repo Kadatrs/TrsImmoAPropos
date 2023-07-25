@@ -1,0 +1,177 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:serif;
+    background-color: white;
+  }
+  
+header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+.logo {
+    width: 150px;
+  }
+  
+footer {
+    background-color: #333;
+    text-align: center;
+    color: grey;
+    padding: 10px;
+  }
+
+  
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+
+.effect:hover {
+  font-size: large;
+}
+
+u {
+  color: red;
+}
+  
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+  }
+
+  
+.container {
+    text-align: left;
+    display: flex;
+  }
+  
+.left>h1,h2,h3,h4,h5,h6,p , .right>h1,h2,h3,h4,h5,h6,p {
+    color: red;
+  }
+  
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    margin: 20px;
+
+    border: solid #333 5px;
+    border-radius: 2%;
+  
+  }
+
+.left>img {
+    max-width: 100%;
+
+}
+
+.right {
+    max-width: 40%;
+    text-align: center;
+    flex: 1;
+    margin: 20px;
+    margin-bottom: 0px;
+    padding: 10px;
+    border-left: solid 2px red;
+    border-right: solid 2px red;
+    border-radius: 5%;
+
+    position:relative;
+    top: 50px;
+    left: 0;
+    
+  }
+
+  
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+.centered-h3 {
+    text-align: center;
+  }
+
+
+.realquote {
+    margin: 0;
+    padding: 0;
+}
+
+.container2 {
+    padding: 10px;
+}
+
+/* New CSS for slide-in animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.quote {
+  background-color: #333;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.quote.slide-in {
+  animation: slideInFromLeft 2s forwards;
+}
+
+/* New CSS for slide-in animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* Duration and timing function for the animation */
+.left.slide-in {
+  animation: slideInFromLeft 2s forwards; /* Adjust the duration (1s) as needed */
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* Duration and timing function for the animation */
+.right.slide-in {
+  animation: slideInFromRight 2s forwards; /* Adjust the duration (1s) as needed */
+}
