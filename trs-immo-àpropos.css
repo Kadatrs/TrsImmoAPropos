@@ -6,6 +6,7 @@ body {
     padding: 0;
     font-family:serif;
     background-color: white;
+    width: 100%;
   }
   
 header {
@@ -52,8 +53,8 @@ nav a {
 
   
 .container {
-    text-align: left;
     display: flex;
+    text-align: left;
   }
   
 .left>h1,h2,h3,h4,h5,h6,p , .right>h1,h2,h3,h4,h5,h6,p {
@@ -174,4 +175,46 @@ nav a {
 /* Duration and timing function for the animation */
 .right.slide-in {
   animation: slideInFromRight 2s forwards; /* Adjust the duration (1s) as needed */
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left , .cart , .right {
+    width: 100%;
+  }
+
+  .quote  {
+    width: 100%;
+  }
+
+  .realquote {
+    width: 100%;
+  }
+
+  .right {
+    max-width: 80%;
+    text-align: center;
+    border-left: solid 2px red;
+    border-right: solid 2px red;
+    border-radius: 5%;
+    
+  }
+
+  .left {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: solid #333 5px;
+    border-radius: 2%;
+  }
+
+  .hrr {
+    width: 50%;
+  }
+
 }
