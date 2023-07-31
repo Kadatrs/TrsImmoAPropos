@@ -62,7 +62,6 @@ nav a {
   }
   
 .left {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -80,7 +79,7 @@ nav a {
 }
 
 .right {
-    max-width: 40%;
+    width: 40%;
     text-align: center;
     flex: 1;
     margin: 20px;
@@ -96,14 +95,6 @@ nav a {
     
   }
 
-  
-.centered-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  
   
 .centered-h3 {
     text-align: center;
@@ -179,8 +170,12 @@ nav a {
 
 
 @media screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+
   .container {
-    flex-direction: column;
+    flex-direction: column;  
     align-items: center;
   }
 
@@ -197,12 +192,11 @@ nav a {
   }
 
   .right {
-    max-width: 80%;
+    width: 70%;
     text-align: center;
     border-left: solid 2px red;
     border-right: solid 2px red;
     border-radius: 5%;
-    
   }
 
   .left {
